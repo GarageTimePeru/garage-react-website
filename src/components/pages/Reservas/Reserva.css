@@ -1,0 +1,57 @@
+  .backgroundReserva {
+    background-color: #fff;
+    margin-left: 300px;  
+    padding: 87px;
+  }
+  
+  .backgroundCrearReserva {
+    background-color: #fff;
+    margin-left: 230px;  
+    padding: 255px;
+  }
+
+  .reserva {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 680px;
+  }
+
+  .reserva label {
+    text-align: left;
+    display: block;
+    font-size: 20px;    
+    color: #000;
+    font-weight: 600;
+  }
+
+  .reserva h2 {
+    font-size: 48px;
+    color: #98002F;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  .reserva input, .reserva textarea, .reserva select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .reserva button {
+    background: #98002F;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .text-h1{
+    color: #000;
+    font-size: 1.5rem;
+  }

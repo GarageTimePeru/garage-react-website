@@ -1,0 +1,54 @@
+  .backgroundInit {
+    background-color: #fff;
+    margin-left: 600px;  
+    padding: 35px;
+  }
+
+  .create {
+    padding-top: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    background: #fff;
+    max-width: 540px;
+    padding-bottom: 10px; 
+  }   
+  .create label {
+    text-align: left;
+    display: block;
+    font-size: 20px;    
+    color: #000;
+    font-weight: 600;
+  }
+  .create h2 {
+    font-size: 48px;
+    color: #98002F;
+    margin-top: 40px;
+    font-weight: 600;
+  }
+  .create input, .create textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+  .create button {
+    background: #98002F;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 25px;
+  }
+
+  .create label_ {
+    text-align: left;
+    display: block;
+    font-size: 15px;    
+    color: #000; 
+  }
