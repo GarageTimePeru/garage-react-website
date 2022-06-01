@@ -7,6 +7,6 @@ export const homeObjOne = {
     description: 'Encuentra todos los garages disponibles para tu auto, según tu comodidad y horario. ¡También puedes hacer reservas!',
     buttonLabel: '¡Empieza Ya!',
     imgStart: '',
-    img: 'images/mapa.png',
+    img: 'images/mapaApp.png',
     alt: 'Mapa'
 }
