@@ -13,7 +13,7 @@ const Form = () => {
   return (
     <>
       <NavLogin />
-      <div className='backgroundSignUp'>
+      <div className='background'>
         {!isSubmitted ? (
           <div className='signup'>
             <FormSignup submitForm={submitForm} />
