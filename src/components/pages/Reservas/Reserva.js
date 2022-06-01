@@ -28,7 +28,7 @@ const Create = () => {
     <>
     <Navbar/>
     <div className="backgroundReserva">
-      <div className="reserva">
+      <div className="reservas">
         <div className="nav-btn">
           {button ? (
             <Link to='/crear-reserva' className="btn-link">

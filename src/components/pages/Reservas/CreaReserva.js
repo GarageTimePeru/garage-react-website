@@ -31,7 +31,7 @@ const CrearReserva = () => {
   return (
     <>
       <Navbar/>
-      <div className="backgroundCrearReserva">
+      <div className="backgroundReserva">
         <div className="reserva">
           <h2>INGRESA RESERVA</h2>
           <form>
