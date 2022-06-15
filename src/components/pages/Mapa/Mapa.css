@@ -1,122 +1,118 @@
-.imgMapa {
-  max-width: 100%;
-  padding-top: 150px;
+.map-gen-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.map-container {
+  margin-left: 30%;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-left: 650px;
+  gap: 24px;
 }
 
-.imgLugar{
-  max-width: 10%;
-  display: inline-block;
-  margin-right: 80px;
+.map-container .map-text {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.lugares{
-  border-radius: 12px;
-  padding-left: 650px; 
-  padding-top: 300px; 
-  padding-right: 250px;
+.garage-grid {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
-.fila{
-  margin-right: 0px;
-  margin-left: 20px; 
-}
-
-.backgroundMapa {
+.garage {
   width: 100%;
-  height: 1000px;
-  margin: auto;
-  padding-left: 300px;
-  background-color: #fff;
+  height: 50px;
+  padding-left: 8px;
+  border: 2px solid #cecece;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.mapa {
-  margin: 0 auto;
-  text-align: right;
-  justify-content: right;
-  background: #fff;
-  max-width: 540px;
-  padding-top: 0;
-  padding-bottom: 100px; 
-  width: 1000px;
-  position: relative;
-  border-radius: 10px;
-}   
+.map-grid {
+  width: 70%;
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: #585859;
+  color: black;
+}
 
-.mapa button {
-  background: #98002F;
-  color: #fff;
-  border: 0;
-  padding: 8px;
+.map-item {
+  width: 50px;
+  height: 70px;
+  border: 2px solid black;
   border-radius: 8px;
-  cursor: pointer;
-  justify-content: right;
-  margin-left: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
 }
 
-.greenSquare {
-  width: 50px; 
-  height: 50px; 
-  background: #0acf56;
-  border-radius: 10px;
-  margin-left: 600px; 
-  font-size: 35px;
-  color: #000;
+.map-item:hover {
+  background-color: red;
 }
 
-.redSquare {
-  width: 50px; 
-  height: 50px; 
-  background: #CF0A0A;
-  border-radius: 10px;
-  margin-left: 300px; 
-  margin-top: -50px; 
+.reserved {
+  background-color: green;
+  color: black;
 }
 
-.purpleSquare {
-  width: 50px; 
-  height: 50px; 
-  background: #d84ff0;
-  border-radius: 10px;
-  margin-left: 300px; 
-  margin-top: -50px; 
+.reserved:hover {
+  background-color: green;
 }
 
-.mapa-h2 {
-  margin-left: 50px; 
-  font-size: 35px;
-  color: #000;
+.formulario-reserva {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: black;
+  font-size: 20px;
 }
 
-@media screen and (max-width: 1600px){
-  .imgMapa {
-    padding-left: 50px;
-  }
+.formulario-fecha {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
 
-  .mapa button {
-    margin-left: 80px;
-  }
-  
-  .greenSquare {
-    width: 40px; 
-    height: 40px; 
-    margin-left: 80px; 
-  }
-  
-  .redSquare {
-    width: 40px; 
-    height: 40px; 
-    margin-left: 130px; 
-  }
-  
-  .purpleSquare {
-    width: 40px; 
-    height: 40px; 
-    margin-left: 220px; 
-  }
+.buttons-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+}
 
-  .mapa-h2 {
-    font-size: 32px;
-  }
+.reservationButton {
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
 }

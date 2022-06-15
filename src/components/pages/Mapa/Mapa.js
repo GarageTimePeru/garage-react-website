@@ -1,57 +1,86 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from '../../Button';
-import { Link } from 'react-router-dom';
-import './Mapa.css';
-import Navbar from '../../Navbar';
+import React, { useState, useEffect } from "react";
+import { Button } from "../../Button";
+import { Link, useParams } from "react-router-dom";
+import "./Mapa.css";
+import Navbar from "../../Navbar";
 
 function Mapa() {
-  const [button, setButton] = useState(true);
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-    
-      useEffect(() => {
-        showButton();
-        window.addEventListener('resize', showButton);
-        return (
-          window.removeEventListener('resize', showButton)
-        );
-      }, []);
+  const { id } = useParams();
+  const [selected, setSelected] = useState(null);
+  const spaces = [
+    { id: 1, reserved: false },
+    { id: 2, reserved: false },
+    { id: 3, reserved: true },
+    { id: 4, reserved: false },
+    { id: 5, reserved: false },
+    { id: 6, reserved: false },
+    { id: 7, reserved: true },
+    { id: 8, reserved: true },
+    { id: 9, reserved: false },
+  ];
 
-    window.addEventListener('resize',showButton);
+  const onFormSubmit = () => {
+    console.log("submit");
+  };
 
   return (
-    <>
-      <Navbar/>
-      <div className="backgroundMapa">
-        <div className='imgMapa'>
-          <img src={'../../../images/garage.PNG'} alt={'garage'} className='img' /> 
-        </div>
+    <div className="map-gen-container">
+      <Navbar />
+      <div className="map-container">
+        {selected ? (
+          <form
+            className="formulario-reserva"
+            onSubmit={(event) => {
+              event.preventDefault();
+              onFormSubmit();
+            }}
+          >
+            <div>Reserva</div>
 
-        <div className="mapa">
-          <div className="nav-btn">
-            {button ? (
-              <Link to='/mapa-lugares' className="btn-link">
-                <Button buttonStyle='btn--outline'>
-                  Lugares
-                </Button>
-              </Link>
-            ) : (
-              <Link to='/mapa-lugares' className="btn-link">
-                <Button buttonStyle='btn--outline'
-                        buttonSize='btn--mobile'>
-                  Lugares
-                </Button>
-              </Link>
-            )}
-          </div>
-        </div>
+            <div className="formulario-fecha">
+              <div>
+                Reservando en garage <strong>{id}</strong> en el espacio{" "}
+                <strong>{selected}</strong>
+              </div>
+              <div>Selecciona la fecha a reservar</div>
+              <input type="date" required />
+            </div>
+            <div className="buttons-wrapper">
+              <input
+                type="submit"
+                value="Reservar"
+                className="reservationButton"
+              />
+              <button
+                className="reservationButton"
+                onClick={() => setSelected(null)}
+              >
+                Volver
+              </button>
+            </div>
+          </form>
+        ) : (
+          <>
+            <div className="map-text">
+              Haz click en un lugar para reservarlo {id}
+            </div>
+            <div className="map-grid">
+              {spaces.map((space) => (
+                <button
+                  className={`map-item ${space.reserved && "reserved"}`}
+                  disabled={space.reserved}
+                  onClick={() => {
+                    if (!space.reserved) setSelected(space.id);
+                  }}
+                >
+                  {space.id}
+                </button>
+              ))}
+            </div>
+          </>
+        )}
       </div>
-    </>
+    </div>
   );
 }
 
