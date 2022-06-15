@@ -28,11 +28,42 @@ function Mapa() {
     <>
       <Navbar/>
       <div className="backgroundMapa">
-        
-        <div className='imgMapa'>
-          <img src={'../../../images/lugares.PNG'} alt={'garage'} className='img' /> 
+        <div className='lugares'>
+          <div className='fila'>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroVerde.png'} alt={'verde'} className='img' /> 
+            </div>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroVerde.png'} alt={'verde'} className='img' /> 
+            </div>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroRojo.png'} alt={'rojo'} className='img' /> 
+            </div>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroMorado.png'} alt={'morado'} className='img' /> 
+            </div>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroVerde.png'} alt={'verde'} className='img' /> 
+            </div>
+          </div>
+          <div className='fila'>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroVerde.png'} alt={'verde'} className='img' /> 
+            </div>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroVerde.png'} alt={'verde'} className='img' /> 
+            </div>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroVerde.png'} alt={'verde'} className='img' /> 
+            </div>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroRojo.png'} alt={'rojo'} className='img' /> 
+            </div>
+            <div className='imgLugar'>
+              <img src={'../../../images/carroMorado.png'} alt={'morado'} className='img' /> 
+            </div>
+          </div>
         </div>
-        <div></div>
 
         <div className="greenSquare">
           <div className="mapa-h2">Libre
